@@ -262,7 +262,7 @@ $pic7.waypoint(function (direction) {
                 .duration(800)
                 .attr("height", function (d) { return height - yScale(d.number) - margin.bottom })
                 .attr("y", function (d) { return yScale(d.number) })
-                .delay(function(d) {return i*100});
+                .delay(function(d,i) {return i*100});
 
             var xAxis = d3.axisBottom()
                 .scale(xScale);
@@ -398,7 +398,7 @@ $pic7.waypoint(function (direction) {
                 .duration(800)
                 .attr("height", function (d) { return height - yScale(d.number) - margin.bottom })
                 .attr("y", function (d) { return yScale(d.number) })
-                .delay(function (d) { return i * 100 });
+                .delay(function (d,i) { return i * 100 });
 
             var xAxis = d3.axisBottom()
                 .scale(xScale);
