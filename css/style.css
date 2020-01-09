@@ -97,7 +97,7 @@ body {
 }
 
 p {
-	line-height: 28px;
+	line-height: 30px;
 }
 
 #header {
@@ -213,7 +213,7 @@ path, .tick {
     margin: auto;
     padding: 18px 30px;
     background-color: rgba(255, 255, 255, 0.95);
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
@@ -270,7 +270,7 @@ path, .tick {
 
 h2 {
 	color: #bb2828;
-    font-size: 30px;
+    font-size: 32px;
     text-align: center;
     margin: 60px 0;
     font-weight: 600;
@@ -280,12 +280,12 @@ h2 {
 .white-col {
 	margin: 9px 250px;
     padding: 15px 50px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .white-col > p {
 	margin: 0px 65px;
-    line-height: 2rem;
+    line-height: 2.5rem;
 }
 
 .container {
