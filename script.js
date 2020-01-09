@@ -252,7 +252,7 @@ $pic7.waypoint(function (direction) {
                 .append("rect")
                 .attr("x", function (d) { return xScale(d.year) })
                 .attr("width", xScale.bandwidth())
-                .attr("height", function (d) { return height - yScale(0) })
+                .attr("height", function (d) { return height - yScale(0) - margin.bottom  })
                 .attr("y", function (d) { return yScale(0) })
                 .attr("fill", "#bb2828");
 
@@ -388,7 +388,7 @@ $pic7.waypoint(function (direction) {
                 .append("rect")
                 .attr("x", function (d) { return xScale(d.year) })
                 .attr("width", xScale.bandwidth())
-                .attr("height", function (d) { return height - yScale(0) })
+                .attr("height", function (d) { return height - yScale(0) - margin.bottom })
                 .attr("y", function (d) { return yScale(0) })
                 .attr("fill", "#bb2828");
 
