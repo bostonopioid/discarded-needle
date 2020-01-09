@@ -327,9 +327,9 @@ $pic7.waypoint(function (direction) {
             d3.select("#intro1")
                 .append("div")
                 .attr("id", "totalNeedle")
-                .html("<p><span id='odometer'>17081</span> discarded needles were reported from 2015 to 2019.</p>");
+                .html("<p><span id='needle-number'>17081</span> discarded needles were reported from 2015 to 2019.</p>");
 
-            $("#odometer").addClass("odometer");
+            $("#needle-number").addClass("odometer");
 
             
             height = document.querySelector("#intro1").clientHeight - 150;

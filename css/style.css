@@ -172,6 +172,7 @@ p {
 	padding-top: 3rem;
 	font-size: 25px;
 	font-weight: 600;
+	color: #f5f5f5; 
 }
 
 #needle-number {
@@ -200,9 +201,14 @@ p {
 .chart-description, .data-source{
 	
 	font-size:14px;
-	color:rgba(20,20,20,0.7);
+	color:rgba(255, 255, 255, 0.95);
 
 	}
+
+
+path, .tick {
+	color: #f5f5f5;
+}
 
 .intro-col {
     z-index: 25;
@@ -222,7 +228,7 @@ p {
 	background-size: cover;
 	z-index: -10;
 	text-align: center;
-	background-color: #f5f5f5;
+	background-color: #333333;
 	transition: all 1s ease;
 	background-position: center;
 
@@ -249,6 +255,7 @@ p {
 .axisLabel {
 	font-size: 12px;
 	font-family: 'Open Sans', sans-serif;
+	fill: #f5f5f5;
 }
 
 .axis {
@@ -604,6 +611,7 @@ footer {
 
 	.chart-description, .data-source {
 	font-size: 10px;
+
 	}
 
 	#totalNeedle, #opioid-ems {
