@@ -250,11 +250,19 @@ $pic7.waypoint(function (direction) {
                 .data(data)
                 .enter()
                 .append("rect")
-                .attr("width", xScale.bandwidth())
-                .attr("height", function (d) { return height - yScale(d.number) - margin.bottom })
                 .attr("x", function (d) { return xScale(d.year) })
-                .attr("y", function (d) { return yScale(d.number) })
+                .attr("width", xScale.bandwidth())
+                .attr("height", function (d) { return height - yScale(0) })
+                .attr("y", function (d) { return yScale(0) })
                 .attr("fill", "#bb2828");
+
+
+                svg.selectAll("rect")
+                .transition()
+                .duration(800)
+                .attr("height", function (d) { return height - yScale(d.number) - margin.bottom })
+                .attr("y", function (d) { return yScale(d.number) })
+                .delay(function(d) {return i*100});
 
             var xAxis = d3.axisBottom()
                 .scale(xScale);
@@ -378,11 +386,19 @@ $pic7.waypoint(function (direction) {
                 .data(data)
                 .enter()
                 .append("rect")
-                .attr("width", xScale.bandwidth())
-                .attr("height", function (d) { return height - yScale(d.number) - margin.bottom })
                 .attr("x", function (d) { return xScale(d.year) })
-                .attr("y", function (d) { return yScale(d.number) })
+                .attr("width", xScale.bandwidth())
+                .attr("height", function (d) { return height - yScale(0) })
+                .attr("y", function (d) { return yScale(0) })
                 .attr("fill", "#bb2828");
+
+
+            svg.selectAll("rect")
+                .transition()
+                .duration(800)
+                .attr("height", function (d) { return height - yScale(d.number) - margin.bottom })
+                .attr("y", function (d) { return yScale(d.number) })
+                .delay(function (d) { return i * 100 });
 
             var xAxis = d3.axisBottom()
                 .scale(xScale);
