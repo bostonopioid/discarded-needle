@@ -118,6 +118,7 @@ p {
 
 #odometer {
    visibility: hidden;
+   z-index: -50;
 }
 
 .title {
@@ -268,7 +269,7 @@ path, .tick {
 	background-color: #f5f5f5;
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin: 10vh 0;
+	padding: 10vh 0;
 }
 
 h2 {
@@ -316,7 +317,7 @@ h2 {
 #map {
 	height: 100vh;
 	width: 100%;
-	z-index: -20;
+	z-index: -10;
 	position: sticky;
 	position: -webkit-sticky;
 	top: 0;

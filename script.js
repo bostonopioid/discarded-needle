@@ -627,7 +627,7 @@ $pic3_3.waypoint(function (direction) {
                 .attr("d", function (d) { return line(d); })
                 .attr("stroke", "#bb2828")
                 .attr("fill", "none")
-                .attr("stroke-width", 2);
+                .attr("stroke-width", 3);
             
             
              svg.append("g")
@@ -732,7 +732,7 @@ $pic3_5.waypoint(function (direction) {
                 .attr("d", function (d) { return line(d); })
                 .attr("stroke", "#bb2828")
                 .attr("fill", "none")
-                .attr("stroke-width", 2);
+                .attr("stroke-width", 3);
             
             svg.append("g")
                 .append("text")
