@@ -201,7 +201,7 @@ p {
 .chart-description, .data-source{
 	
 	font-size:14px;
-	color:rgba(255, 255, 255, 0.95);
+	fill:rgba(255, 255, 255, 0.95);
 
 	}
 
