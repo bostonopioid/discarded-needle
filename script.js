@@ -10,7 +10,6 @@ var $pic8 = $("#pic1-8");
 var $pic9 = $("#pic1-9");
 var $pic10 = $("#pic1-10");
 
-document.querySelector("#odometer").style.visibility = "hidden";
 
 
     $pic1.waypoint(function (direction) {
