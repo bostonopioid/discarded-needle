@@ -573,16 +573,18 @@ footer {
 
 
 	.intro-col {
-		width: 100%;
-		padding: 10px;
-		background-color: rgba(255, 255, 255, 0.95)
+    	padding: 0 15px;
+    	background-color: rgba(255, 255, 255, 0.95);
+    	grid-column: 1/8;
 	}
 
 	.photo-credit {
-	padding-right: 10%;
-	
+	grid-column: 1/8;
 	}
 	
+	svg {
+		grid-column: 1/7;
+	}
 	
 	p{
 	
@@ -591,12 +593,11 @@ footer {
 	}
 
 	.divide {
-		height: 900px;
+		height: 100vh;
 	}
 
 	.white-col {
-		margin: 10px 0px;
-		padding: 15px 0px;
+		grid-column: 1/8;
 	}
 	
 	.white-col > p {
@@ -606,11 +607,10 @@ footer {
 	}
 
 	.column {
-		margin-left: 0%;
-		margin-right: 0%;
-		padding: 10px;
+    	padding: 10px 15px;
     	font-size: 14px;
     	line-height: 22px;
+    	grid-column: 1/8;
 	}
 
 	.chart-description, .data-source {
