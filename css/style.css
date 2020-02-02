@@ -105,7 +105,7 @@ p {
 	position: relative;
 	overflow: hidden;
 	text-align: center;
-	background-image: url(/discarded-needle/img/header-pic.png);
+	background-image: url(/discarded-needle/img/header-pic.jpg);
 	background-repeat: no-repeat;
 	display: grid;
 	background-size: cover;
@@ -144,7 +144,7 @@ p {
     grid-row: 4/5;
     align-self: flex-start;
     justify-self: center;
-		
+
 }
 
 #author-name {
@@ -185,7 +185,7 @@ font-size: 14px;
 #totalNeedle, #opioid-ems {
 	font-size: 25px;
 	font-weight: 600;
-	color: #f5f5f5; 
+	color: #f5f5f5;
 	grid-column: 2/7;
     grid-row: 1/2;
     align-self: center;
@@ -218,7 +218,7 @@ svg {
 }
 
 .chart-description, .data-source{
-	
+
 	font-size:14px;
 	fill:rgba(255, 255, 255, 0.95);
 
@@ -473,36 +473,36 @@ footer {
    		visibility: visible;
 		}
   }
-}  
+}
 
 
 /*phone*/
 @media  (max-width:414px) {
-	
+
 	#preload-01 {
 	background: url(/discarded-needle/img/mobile/street.jpg) no-repeat -9999px -9999px;
 	}
-	
+
 	#preload-02 {
 	background: url(/discarded-needle/img/mobile/domingo_pickup.jpg) no-repeat -9999px -9999px;
 	}
-	
+
 	#preload-03 {
 	background: url(/discarded-needle/img/mobile/domingo_walk.jpg) no-repeat -9999px -9999px;
 	}
-	
+
 	#preload-04 {
 	background: url(/discarded-needle/img/mobile/needle_bottle.jpg) no-repeat -9999px -9999px;
 	}
-	
+
 	#preload-05 {
 	background: url(/discarded-needle/img/mobile/man_put_needle.jpg) no-repeat -9999px -9999px;
 	}
-	
+
 	#preload-06 {
 	background: url(/discarded-needle/img/mobile/wikimedia_needle_on_ground.jpg) no-repeat -9999px -9999px;
 	}
-	
+
 	#preload-07 {
 	background: url(/discarded-needle/img/mobile/domingo_pointing.jpg) no-repeat -9999px -9999px;
 	}
@@ -510,19 +510,19 @@ footer {
 	#preload-08 {
 	background: url(/discarded-needle/img/mobile/domingo_walkaway.jpg) no-repeat -9999px -9999px;
 	}
-	
+
 	#preload-09 {
 	background: url(/discarded-needle/img/mobile/narcane.jpg) no-repeat -9999px -9999px;
 	}
-	
+
 	#preload-10 {
 	background: url(/discarded-needle/img/mobile/condom_ground_cropped.jpg) no-repeat -9999px -9999px;
 	}
-	
+
 	#preload-11 {
 	background: url(/discarded-needle/img/mobile/playground.jpg) no-repeat -9999px -9999px;
 	}
-	
+
 	#preload-12 {
 	background: url(/discarded-needle/img/mobile/socks.jpg) no-repeat -9999px -9999px;
 	}
@@ -535,21 +535,21 @@ footer {
 	#preload-14 {
 	background: url(/discarded-needle/img/mobile/only_box.jpg) no-repeat -9999px -9999px;
 	}
-	
+
 	#preload-15 {
 	background: url(/discarded-needle/img/mobile/people_pickup_needle.jpg)no-repeat -9999px -9999px;
 	}
-	
+
 	#preload-16 {
 	background: url(/discarded-needle/img/mobile/box_with_needles.jpg)no-repeat -9999px -9999px;
 	}
-	
+
 	#preload-17 {
 	background: url(/discarded-needle/img/mobile/needle_kiosks.png) no-repeat -9999px -9999px;
 	}
-	
 
-            
+
+
 	#header {
 		background-image: url(/discarded-needle/img/mobile/mobileheader.jpg);
 	}
@@ -558,24 +558,24 @@ footer {
     	font-size: 5rem;
     	grid-column: 2/7;
 	}
-	
+
 	#subtitle {
 		font-size: 17px;
     	line-height: 1.5em;
     	grid-column: 2/7;
-		
-	
+
+
 	}
-		
+
 	#author-name{
-		
+
 		font-size: 10px;
     	line-height: 1rem;
 		grid-column: 2/7;
 		align-self: auto;
-	
+
 	}
-	
+
 	#odometer {
    		visibility: visible;
 		}
@@ -590,13 +590,13 @@ footer {
 	.photo-credit {
 	grid-column: 1/8;
 	}
-	
+
 	svg {
 		grid-column: 1/7;
 	}
-	
+
 	p{
-	
+
 	line-height: 20px;
     	font-size: 14px;
 	}
@@ -608,11 +608,11 @@ footer {
 	.white-col {
 		grid-column: 1/8;
 	}
-	
+
 	.white-col > p {
 		margin: 0 30px;
 		line-height: 1.5rem;
-		
+
 	}
 
 	.column {
@@ -630,7 +630,7 @@ footer {
 	#totalNeedle, #opioid-ems {
 	    line-height: 24px;
 		font-size: 20px;
-		
+
 	}
 
 	#year-tag {
@@ -708,7 +708,7 @@ footer {
 	.intro4-1 {
 		background-image: url(/discarded-needle/img/mobile/only_box.jpg);
 	}
-	
+
 	.intro4-2 {
 		background-image:url(/discarded-needle/img/mobile/needle_kiosks.png);
 	}
@@ -721,11 +721,3 @@ footer {
 		background-image: url(/discarded-needle/img/mobile/box_with_needles.jpg);
 	}
 }
- 
-
-
-
-
- 
-
-

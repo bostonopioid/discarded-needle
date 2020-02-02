@@ -17,10 +17,10 @@ var $pic10 = $("#pic1-10");
 
         if (direction == "down") {
 
-            document.querySelector("#header").style.visibility = "hidden";  
+            document.querySelector("#header").style.visibility = "hidden";
             document.querySelector("#odometer").style.visibility = "hidden";
             $("#intro1").addClass("intro1-1");
- 
+
 
         }
 
@@ -28,7 +28,7 @@ var $pic10 = $("#pic1-10");
 
             document.querySelector("#header").style.visibility = "visible";
             document.querySelector("#odometer").style.visibility = "visible";
-    
+
         }
 
 
@@ -40,12 +40,12 @@ var $pic10 = $("#pic1-10");
 
 
         if (direction == "down") {
-            
-            
+
+
             $("#intro1").removeClass("intro1-1");
             $("#intro1").addClass("intro1-2");
 
-            
+
 
 
         }
@@ -54,7 +54,7 @@ var $pic10 = $("#pic1-10");
 
             $("#intro1").removeClass("intro1-2");
             $("#intro1").addClass("intro1-1");
-            
+
 
         }
 
@@ -66,7 +66,7 @@ var $pic10 = $("#pic1-10");
 
 
         if (direction == "down") {
-            
+
             $("#intro1").removeClass("intro1-2");
 
 
@@ -78,13 +78,13 @@ var $pic10 = $("#pic1-10");
 
             $("#intro1").removeClass("intro1-3");
             $("#intro1").addClass("intro1-2");
-            
+
 
         }
 
     }, { offset: "90%" });
 
-    
+
     $pic4.waypoint(function (direction) {
 
 
@@ -99,7 +99,7 @@ var $pic10 = $("#pic1-10");
 
             $("#intro1").removeClass("intro1-4");
             $("#intro1").addClass("intro1-3");
-            
+
 
         }
     }, { offset: "90%" });
@@ -117,7 +117,7 @@ var $pic10 = $("#pic1-10");
 
         else if (direction == "up") {
             $("#intro1").removeClass("intro1-5");
-            $("#intro1").addClass("intro1-4"); 
+            $("#intro1").addClass("intro1-4");
 
         }
     }, { offset: "90%" });
@@ -161,7 +161,7 @@ $pic7.waypoint(function (direction) {
     else if (direction == "up") {
         $("#intro1").removeClass("intro1-7");
         $("#intro1").addClass("intro1-6");
-        
+
         d3.select("#intro1")
                 .append("div")
                 .attr("class", "photo-credit")
@@ -171,7 +171,7 @@ $pic7.waypoint(function (direction) {
 
 }, { offset: "90%" });
 
- 
+
     var height;
     var width;
     var margin;
@@ -191,19 +191,19 @@ $pic7.waypoint(function (direction) {
                 .attr("id", "totalNeedle")
                 .html("<p><span id='needle-number'>17,081</span> discarded needles were reported from 2015 to 2019.</p>");
 
-    
+
 
             height = document.querySelector("#intro1").clientHeight - 150;
             width = document.querySelector("#intro1").clientWidth - 300;
             margin = { top: 50, left: 150, bottom: 100, right: 150 };
-            
+
             if (window.matchMedia('screen and (max-width: 414px)').matches) {
 
                 width = document.querySelector("#intro1").clientWidth;
                 height = document.querySelector("#intro1").clientHeight - 100;
                 margin = { top: 100, left: 50, bottom: 150, right: 30 };
             }
-            
+
             svg = d3.select("#intro1")
                 .append("svg")
                 .attr("height", height)
@@ -235,7 +235,7 @@ $pic7.waypoint(function (direction) {
                 .scale(yScale)
                 .ticks(6);
 
-            
+
             var yAxisLabel = svg.append("text")
                 .attr("class", "axisLabel")
                 .attr("transform", "rotate(-90)")
@@ -303,7 +303,7 @@ $pic7.waypoint(function (direction) {
 
             $("#intro1").addClass("intro1-7");
 
-            
+
             d3.selectAll("svg").remove();
             d3.select("#totalNeedle").remove();
 
@@ -311,7 +311,7 @@ $pic7.waypoint(function (direction) {
 
     }, { offset: "90%" });
 
-  
+
 
     $pic9.waypoint(function (direction) {
 
@@ -323,7 +323,7 @@ $pic7.waypoint(function (direction) {
             d3.selectAll("svg").remove();
             d3.select("#totalNeedle").remove();
 
-            
+
 
         }
         else if (direction == "up") {
@@ -337,12 +337,12 @@ $pic7.waypoint(function (direction) {
 
             $("#needle-number").addClass("odometer");
 
-            
+
             height = document.querySelector("#intro1").clientHeight - 150;
             width = document.querySelector("#intro1").clientWidth - 300;
             margin = { top: 50, left: 150, bottom: 100, right: 150 };
-            
-            
+
+
             if (window.matchMedia('screen and (max-width: 414px)').matches) {
 
                 width = document.querySelector("#intro1").clientWidth;
@@ -415,7 +415,7 @@ $pic7.waypoint(function (direction) {
             svg.append("g")
                 .attr("transform", `translate(${margin.left}, 0)`)
                 .call(yAxis);
-            
+
             svg.append("g")
                 .append("text")
                 .attr("transform", `translate(${margin.left}, ${height - margin.bottom + 40})`)
@@ -489,7 +489,7 @@ $pic2_2.waypoint(function (direction) {
             $("#intro2").addClass("intro2-1");
 
             d3.selectAll(".photo-credit").remove()
-            
+
 
         }
     }, { offset: "90%" });
@@ -575,11 +575,11 @@ $pic3_3.waypoint(function (direction) {
 
 
     if (direction == "down") {
-        
+
         d3.selectAll(".photo-credit").remove();
 
         $("#intro3").removeClass("intro3-2");
-        
+
 
         d3.select("#intro3")
             .append("div")
@@ -590,14 +590,14 @@ $pic3_3.waypoint(function (direction) {
             height = document.querySelector("#intro1").clientHeight - 150;
             width = document.querySelector("#intro1").clientWidth - 300;
             margin = { top: 50, left: 150, bottom: 100, right: 150 };
-       
+
         if (window.matchMedia('screen and (max-width: 414px)').matches) {
 
             width = document.querySelector("#intro1").clientWidth;
             height = document.querySelector("#intro1").clientHeight - 100;
             margin = { top: 100, left: 50, bottom: 150, right: 30 };
         }
-        
+
         svg = d3.select("#intro3")
             .append("svg")
             .attr("height", height)
@@ -621,7 +621,7 @@ $pic3_3.waypoint(function (direction) {
                 .domain([0, d3.max(data, function(d){return d.number;})])
                 .range([height - margin.bottom, margin.top]);
 
-            
+
             var line = d3.line()
                 .x(function (d) { return xScale(d.time); })
                 .y(function (d) { return yScale(d.number); })
@@ -631,7 +631,7 @@ $pic3_3.waypoint(function (direction) {
                 .attr("class", "axis")
                 .attr("transform", `translate(0,${height - margin.bottom})`)
                 .call(d3.axisBottom().scale(xScale).tickFormat(d3.timeFormat("%Y-%m")));
-           
+
             var yAxis = svg.append("g")
                 .attr("class", "axis")
                 .attr("transform", `translate(${margin.left},0)`)
@@ -643,14 +643,14 @@ $pic3_3.waypoint(function (direction) {
                 .attr("stroke", "#bb2828")
                 .attr("fill", "none")
                 .attr("stroke-width", 3);
-            
-            
+
+
              svg.append("g")
                 .append("text")
                 .attr("transform", `translate(${margin.left}, ${height - margin.bottom + 40})`)
                 .attr("class", "data-source")
                 .text("Source: Massachusetts Department of Public Health")
-            
+
             $("#intro3").addClass("fadeIn");
 
 
@@ -665,7 +665,7 @@ $pic3_3.waypoint(function (direction) {
 
         d3.selectAll("svg").remove();
         d3.select("#opioid-ems").remove();
-        
+
          d3.select("#intro3")
             .append("div")
             .attr("class", "photo-credit")
@@ -748,17 +748,17 @@ $pic3_5.waypoint(function (direction) {
                 .attr("stroke", "#bb2828")
                 .attr("fill", "none")
                 .attr("stroke-width", 3);
-            
+
             svg.append("g")
                 .append("text")
                 .attr("transform", `translate(${margin.left}, ${height - margin.bottom + 40})`)
                 .attr("class", "data-source")
                 .text("Source: Massachusetts Department of Public Health")
-        
-            }) 
+
+            })
         }
 
-    
+
 
 }, { offset: "90%" });
 
@@ -769,7 +769,7 @@ $pic3_6.waypoint(function (direction) {
 
         $("#intro3").removeClass("intro3-5");
         $("#intro3").addClass("intro3-6");
-        
+
     }
 
     else if (direction == "up") {
@@ -850,4 +850,3 @@ $pic5_2.waypoint(function (direction) {
     }
 
 }, { offset: "90%" });
-
