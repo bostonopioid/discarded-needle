@@ -716,7 +716,7 @@ footer {
 }
 
 /* Firefox */
-@media screen and (-moz-images-in-menus:0){
+@-moz-document url-prefix(){
 	#odometer {
 		 visibility: visible;
 }
