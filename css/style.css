@@ -467,13 +467,6 @@ footer {
 }}
 
 
-/* Firefox */
-@media screen and (-moz-images-in-menus:0){
-	#odometer {
-		 visibility: visible;
-}
-
-
 /*phone*/
 @media  (max-width:414px) {
 
@@ -718,4 +711,10 @@ footer {
 	.intro5-2 {
 		background-image: url(/discarded-needle/img/mobile/box_with_needles.jpg);
 	}
+}
+
+/* Firefox */
+@media screen and (-moz-images-in-menus:0){
+	#odometer {
+		 visibility: visible;
 }
