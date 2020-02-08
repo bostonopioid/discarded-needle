@@ -123,8 +123,11 @@ p {
    z-index: -50;
 }
 
+.title, #subtitle, #totalNeedle, #opioid-ems {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .title {
-    font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-size: 9rem;
     color: rgba(238, 74, 59, 0.8);
@@ -138,7 +141,7 @@ p {
 
 #subtitle {
     font-size: 22px;
-    line-height: 2.4rem;
+    line-height: 1.4rem;
     font-weight: 800;
     grid-column: 3/6;
     grid-row: 4/5;
@@ -184,7 +187,7 @@ font-size: 14px;
 
 #totalNeedle, #opioid-ems {
 	font-size: 25px;
-	font-weight: 600;
+	font-weight: 300;
 	color: #f5f5f5;
 	grid-column: 2/7;
     grid-row: 1/2;
