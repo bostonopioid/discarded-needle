@@ -467,7 +467,11 @@ footer {
 }}
 
 
-
+/* Firefox */
+@media screen and (-moz-images-in-menus:0){
+	#odometer {
+		 visibility: visible;
+}
 
 
 /*phone*/
