@@ -237,7 +237,7 @@ path, .tick {
     background-color: rgba(255, 255, 255, 0.95);
     font-size: 18px;
     grid-column: 3/6;
-    height: fit-content;
+    align-self: start; /*Remove the height on the grid items and add align-items: start; (the default is stretch) to the grid container.*/
 }
 
 
@@ -327,7 +327,7 @@ h2 {
     background-color: rgba(255, 255, 255, 0.95);
     padding: 18px 30px;
     font-size: 18px;
-    height: fit-content;
+    align-self: start;
     grid-column: 3/6;
 }
 
@@ -636,8 +636,9 @@ footer {
 
 	h2 {
 		font-size: 28px;
-		margin: 40px 5px;
-		line-height: 2rem;
+		line-height: 1.2em;
+		text-align: left;
+		margin: 20px 30px;
 	}
 
 	.quote {
@@ -723,4 +724,8 @@ footer {
 @-moz-document url-prefix(){
 	#odometer {
 		 visibility: visible;
+}
+
+
+
 }
