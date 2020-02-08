@@ -297,7 +297,7 @@ h2 {
 	color: #bb2828;
 		font-size: 36px;
     text-align: center;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.5em;
 }
 
@@ -621,9 +621,13 @@ footer {
 	}
 
 	#totalNeedle, #opioid-ems {
-	    line-height: 24px;
-		font-size: 20px;
+	   align-self: end;
 
+	}
+
+	#totalNeedle p, #opioid-ems p {
+		font-size: 21px;
+    line-height: 1.5em;
 	}
 
 	#year-tag {
@@ -632,14 +636,14 @@ footer {
 
 	h2 {
 		font-size: 28px;
-		margin: 60px 5px;
+		margin: 40px 5px;
 		line-height: 2rem;
 	}
 
 	.quote {
 		font-size: 18px;
     	line-height: 1.8rem;
-    	padding: 10vh 15%;
+    	padding: 10vh 10px;
 	}
 
 	img {
