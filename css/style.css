@@ -467,13 +467,7 @@ footer {
 }}
 
 
-/* Firefox */
-@-moz-document url-prefix() {
-   #odometer {
-   		visibility: visible;
-		}
-  }
-}
+
 
 
 /*phone*/
