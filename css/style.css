@@ -87,6 +87,10 @@
 	box-sizing: border-box;
 }
 
+a{
+	text-decoration: none;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -307,7 +311,7 @@ h2 {
 }
 
 .white-col > p {
-	margin: 0px 65px;
+	margin: 0px 65px 3em 65px;
     line-height: 2.5rem;
 }
 
@@ -376,6 +380,17 @@ h2 {
 img {
 	margin: 0 auto;
 	width: 600px;
+}
+
+.button {
+	    font-size: 20px;
+	    color: #fafafa;
+	    background-color: #bb2828;
+	    box-shadow: #333333;
+	    margin: 2em 65px;
+	    padding: 1em 2em;
+	    box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.5);
+	    border-radius: 8px;
 }
 
 footer {
@@ -603,7 +618,7 @@ footer {
 	}
 
 	.white-col > p {
-		margin: 0 30px;
+		margin: 0em 30px 2em 30px;
 		line-height: 1.5rem;
 
 	}
@@ -649,6 +664,12 @@ footer {
 
 	img {
 		width: 300px;
+	}
+
+	.button {
+		font-size: 12px;
+		margin: 2em 30px;
+		padding: 1em 1em;
 	}
 
 	.intro1-1 {
