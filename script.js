@@ -634,7 +634,7 @@ $pic3_3.waypoint(function (direction) {
 
                 if (window.matchMedia('screen and (max-width: 414px)').matches) {
 
-                    xAxis.call(d3.axisBottom().scale(xScale).tickFormat(d3.timeFormat("%Y")).ticks(5).render());
+                    xAxis.call(d3.axisBottom().scale(xScale).tickFormat(d3.timeFormat("%Y")).ticks(5));
                 }
 
             var yAxis = svg.append("g")
