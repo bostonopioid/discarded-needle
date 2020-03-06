@@ -630,7 +630,7 @@ $pic3_3.waypoint(function (direction) {
             var xAxis = svg.append("g")
                 .attr("class", "axis")
                 .attr("transform", `translate(0,${height - margin.bottom})`)
-                .call(d3.axisBottom().scale(xScale).tickFormat(d3.timeFormat("%Y-%m"))).ticks(5)
+                .call(d3.axisBottom().scale(xScale).tickFormat(d3.timeFormat("%Y-%m")).ticks(5))
                 .selectAll(".tick").selectAll("text")
                 .attr("transform", "rotate(-50)");
 
