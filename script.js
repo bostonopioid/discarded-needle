@@ -630,9 +630,12 @@ $pic3_3.waypoint(function (direction) {
             var xAxis = svg.append("g")
                 .attr("class", "axis")
                 .attr("transform", `translate(0,${height - margin.bottom})`)
-                .call(d3.axisBottom().scale(xScale).tickFormat(d3.timeFormat("%Y-%m")).ticks(5))
-                .selectAll(".tick").selectAll("text")
-                .attr("transform", "rotate(-50)");
+                .call(d3.axisBottom().scale(xScale).tickFormat(d3.timeFormat("%Y-%m")));
+
+                if (window.matchMedia('screen and (max-width: 414px)').matches) {
+
+                    xAxis.call(d3.axisBottom().scale(xScale).tickFormat(d3.timeFormat("%Y")).ticks(5).render());
+                }
 
             var yAxis = svg.append("g")
                 .attr("class", "axis")
